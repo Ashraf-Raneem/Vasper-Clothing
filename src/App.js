@@ -5,10 +5,10 @@ import Header from './component/header/header.component';
 import HomePage from "./pages/homepage/homepage.component.jsx";
 import ShopPage from "./pages/shopPage/shopPage.component";
 import signInAndSignOutPage from './pages/sign-In-Out/sign-In-Out.component'; 
-import {auth} from './firebase/firebase.utils'; 
+import {auth , createUserProfileDocument} from './firebase/firebase.utils'; 
 
+import { setCurrentUser } from './redux/user/user.actions';
 import {connect} from 'react-redux'
-import { render } from '@testing-library/react';
 
 class App extends React.Component {
 
