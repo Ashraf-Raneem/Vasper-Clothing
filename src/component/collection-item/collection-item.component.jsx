@@ -25,7 +25,7 @@ const CollectionItem = ({item,addToCart}) => {
     )
 }
 
-const mapStateToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     addToCart : items => dispatch(addToCart(items))
 })
-export default connect (null,mapStateToProps)(CollectionItem); 
+export default connect (null,mapDispatchToProps)(CollectionItem); 
